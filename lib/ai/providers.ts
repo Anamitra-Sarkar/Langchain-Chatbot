@@ -69,7 +69,8 @@ export class HuggingFaceProvider extends AIProvider {
       throw new Error('HuggingFace API key not configured');
     }
 
-    const response = await fetch('https://api-inference.huggingface.co/models/gpt2', {
+    // Using DialoGPT for better conversational responses
+    const response = await fetch('https://api-inference.huggingface.co/models/microsoft/DialoGPT-large', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

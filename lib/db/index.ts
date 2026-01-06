@@ -18,7 +18,7 @@ class MemoryStore {
 
   async createUser(email: string, name?: string, image?: string): Promise<User> {
     const user: User = {
-      id: Math.random().toString(36).substring(7),
+      id: crypto.randomUUID(),
       email,
       name,
       image,
@@ -48,7 +48,7 @@ class MemoryStore {
 
   async createConversation(userId: string, title: string): Promise<Conversation> {
     const conversation: Conversation = {
-      id: Math.random().toString(36).substring(7),
+      id: crypto.randomUUID(),
       userId,
       title,
       createdAt: new Date(),
@@ -83,7 +83,7 @@ class MemoryStore {
     metadata?: Record<string, unknown>
   ): Promise<Message> {
     const message: Message = {
-      id: Math.random().toString(36).substring(7),
+      id: crypto.randomUUID(),
       conversationId,
       role,
       content,

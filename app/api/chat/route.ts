@@ -6,9 +6,10 @@ export const runtime = 'edge';
 
 export async function POST(req: Request) {
   try {
-    // For edge runtime, we'll allow anonymous users
-    // In production, you'd implement JWT verification here
-    const userId = 'anonymous';
+    // For edge runtime, generate a session-based anonymous user ID
+    // In production, implement proper JWT verification or session handling
+    const sessionId = req.headers.get('x-session-id') || crypto.randomUUID();
+    const userId = `anon-${sessionId}`;
 
     const { message, conversationId, provider } = await req.json();
 

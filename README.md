@@ -1,6 +1,6 @@
 # 🚀 AI Chat Platform
 
-A production-ready, fully deployable AI Chat Platform built with Next.js 14, LangChain, and designed exclusively for Vercel hosting.
+A production-ready, fully deployable AI Chat Platform built with Next.js 14 and designed exclusively for Vercel hosting.
 
 ![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)
 ![Next.js](https://img.shields.io/badge/Next.js-14-black)
@@ -323,9 +323,9 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 ## 🙏 Acknowledgments
 
 - Built with [Next.js](https://nextjs.org/)
-- AI powered by [LangChain](https://langchain.com/)
 - Deployed on [Vercel](https://vercel.com/)
 - Authentication by [NextAuth.js](https://next-auth.js.org/)
+- Syntax highlighting by [Prism](https://prismjs.com/)
 
 ---
 
